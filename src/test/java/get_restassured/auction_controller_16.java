@@ -23,7 +23,7 @@ public class auction_controller_16 {
      
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiRG9lIiwidXNlcklkIjoiMTA1Yzg0NGItNWNlZi00NGIyLWFlMzEtOTQxYmZiOTQ3Mzc2IiwiZmlyc3ROYW1lIjoid2FnaCIsInJvbGVzIjpbIkJpZGRlciJdLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjc3MDc0NCwiZXhwIjoxNzMyNzc2NzQ0fQ.WCkjNaZqYFQ4hQwcgSynq6h4HLTtOokKLKElk6EKoH0";  
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBdWN0aW9uZWVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJTaGFybWEiLCJ1c2VySWQiOiI3ODI4NTAwZi01NzgxLTQwZDUtOWU2MS1hZGYyYTA5ZWI5OTMiLCJmaXJzdE5hbWUiOiJESEFWQUwiLCJzdWIiOiJkaGF2YWwuc2hhcm1hIiwiaWF0IjoxNzMwNzE5NTUzLCJleHAiOjE3MzA3MjU1NTN9.hz6WPaCfYLSw1_tVeZhi0zwLaL7iYo8pJIivzM4ylbA";  
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

@@ -24,8 +24,8 @@ import io.restassured.specification.RequestSpecification;
 		requestParams.put("isbn", "9781449325862"); 
 		
 		// Add a header stating the Request body is a JSON 
-		request.headerrequest.body(("Content-Type", "application/json"); // Add the Json to the body of the request 
-		requestParams.toString()); // Post the request and check the response
+		request.header("Content-Type", "application/json"); // Add the Json to the body of the request 
+		requestParams.toString(); // Post the request and check the response
 		Response response= RestAssured.get("https://fake-json-api.mock.beeceptor.com/users");
 	
 
