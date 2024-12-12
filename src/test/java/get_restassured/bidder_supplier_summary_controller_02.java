@@ -23,7 +23,7 @@ public class bidder_supplier_summary_controller_02 {
      
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJsYXN0TmFtZSI6IkRvZSIsImFjdGl2ZSI6dHJ1ZSwicm9sZXMiOlsiQmlkZGVyIl0sImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjk2MDE1NywiZXhwIjoxNzMyOTY2MTU3fQ.l7dqHSP4P-IAm2CFqka8HgPTFcd0wYRoAeE-ufcW5QQ";  
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwiZmlyc3ROYW1lIjoid2FnaCIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImxhc3ROYW1lIjoiRG9lIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4ODgyNzgsImV4cCI6MTczMzkxODI3OH0.H9aQEiSZPXvBIBQADAQa4U1AXrG6lYWnAZYxBmqExx0";  
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

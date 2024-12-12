@@ -23,7 +23,7 @@ public class lot_image_controller_02 {
      
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiRG9lIiwidXNlcklkIjoiMTA1Yzg0NGItNWNlZi00NGIyLWFlMzEtOTQxYmZiOTQ3Mzc2IiwiZmlyc3ROYW1lIjoid2FnaCIsInJvbGVzIjpbIkJpZGRlciJdLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg3MTE4MywiZXhwIjoxNzMyODc3MTgzfQ.p__M5f3qwjrYtFV7Hxz2ay5z7rJjIh0-Y5y4s6gxZN4";  
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwiZmlyc3ROYW1lIjoid2FnaCIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImxhc3ROYW1lIjoiRG9lIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4ODgyNzgsImV4cCI6MTczMzkxODI3OH0.H9aQEiSZPXvBIBQADAQa4U1AXrG6lYWnAZYxBmqExx0";  
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

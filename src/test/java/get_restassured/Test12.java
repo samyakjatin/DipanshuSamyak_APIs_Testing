@@ -21,7 +21,7 @@ public class Test12 {
         request.queryParam("password", "samyak@2024");
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjEwNWM4NDRiLTVjZWYtNDRiMi1hZTMxLTk0MWJmYjk0NzM3NiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjI1NjU3OSwiZXhwIjoxNzMyMjYyNTc5fQ.qQ8QUfA14moHuEpLtGQweWnOtHsU-JOKmOkvCmRoCHM";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwiZmlyc3ROYW1lIjoid2FnaCIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImxhc3ROYW1lIjoiRG9lIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM5MTIwNDIsImV4cCI6MTczMzk0MjA0Mn0.HO2q0uDYC3Vd0_DyGsK1zLVHMMUU9pawU2qWHxQ7tvY";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required
