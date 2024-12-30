@@ -23,18 +23,20 @@ public class auction_controller_09 {
      
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjEwNWM4NDRiLTVjZWYtNDRiMi1hZTMxLTk0MWJmYjk0NzM3NiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjY5ODA1OCwiZXhwIjoxNzMyNzA0MDU4fQ.T2Cbt3oncZFhbHqYQIq7O314y909rW-DsUCeLPLc27I";  
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI5ODkyOSwiZXhwIjoxNzM1MzI4OTI5fQ.LzVzZprMIlwgavSqxTBI2uUzvEnnUc9wQFNlTkbNMPQ";  
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
         
        // String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
-       // String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+       // String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3";
+        String supplierId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3";
         
         // Add path parameters dynamically
      //  request.pathParam("userId", userId);
        // request.pathParam("auctionId", auctionId);
+        request.pathParam("supplierId", supplierId);
         
         // Send the GET request with query parameters
         Response response = request.get("/auctions/upcoming/supplier/{supplierId}"); 

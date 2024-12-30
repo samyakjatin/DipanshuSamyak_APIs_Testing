@@ -17,7 +17,7 @@ public class AuctionController05 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsImFjdGl2ZSI6ZmFsc2UsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4MjczNDUsImV4cCI6MTczMzg1NzM0NX0.7Y2Iy9f3F8MPgjGOrIiwFd9h71HAHwvjCmkpwKZ46jI";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNDE2ODM2NywiZXhwIjoxNzM0MTk4MzY3fQ.5MVGjYPJ5mgtd4bIgUA7wWcMn19_cJpCBvgWxwJCYK0";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
        // String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
